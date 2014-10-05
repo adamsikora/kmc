@@ -1,0 +1,17 @@
+
+nu = 1e13
+T = 300.0
+
+E_M_M = 0.3
+E_M_Si = 1.0
+E_M_Tl = 1.0
+
+E_bM = 0.4
+
+E_b100 = 0.03
+E_b111 = 0.7
+
+layers per sec = 0.0001
+target coverage = 0.1
+
+seed = 13

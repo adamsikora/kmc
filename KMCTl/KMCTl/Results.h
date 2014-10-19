@@ -8,7 +8,6 @@ defines class for managing simulation output
 #ifndef RESULTS_H
 #define RESULTS_H
 
-#include <direct.h>
 #include "Includes.h"
 #include "Grid.h"
 
@@ -37,7 +36,7 @@ public:
       std::stringstream ss;
 
       ss << std::scientific << std::setprecision(1) << nu << "\t"
-         << std::defaultfloat << std::fixed << std::setprecision(0) << T << "\t"
+         << std::fixed << std::setprecision(0) << T << "\t"
          << std::setprecision(3) << E_M_M   << "\t"
          << std::setprecision(3) << E_M_Si  << "\t"
          << std::setprecision(3) << E_M_Tl  << "\t"

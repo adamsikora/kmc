@@ -243,7 +243,7 @@ void Report::pdbput(std::string charakteristic, bool all, bool zkrychlit)
    int i = 1;
 
    for (auto it : PDBs) {
-      putFile(path + pdbName + charakteristic + std::to_string(i++) + pdbExtension, it);
+      putFile(path + pdbName + charakteristic + /*std::to_string(i++) +*/ pdbExtension, it);
    }
 }
 

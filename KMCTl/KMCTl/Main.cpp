@@ -27,5 +27,5 @@ int main()
 
 	std::cin.ignore();
 
-	return EXIT_SUCCESS;
+	return 0;
 }

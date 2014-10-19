@@ -75,7 +75,7 @@ private:
 
 	unsigned __int64 _nEvents;
    unsigned __int64 _nAds, _nDiff, _nDes;// _nUpDiff, _nDownDiff, _nDes;// , _nFreeDes, _nFreeDiff;    // events counters
-   inline unsigned __int64 _getnActions() { return _nAds + _nDiff + _nDes; }
+   inline unsigned __int64 _getnActions() const { return _nAds + _nDiff + _nDes; }
    unsigned __int64 _nMetal, _nSilicon;
 	double _targetCoverage;
 

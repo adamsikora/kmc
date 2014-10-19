@@ -23,7 +23,7 @@ int main()
    std::cout << "\n\n\n";
 
 	sw.stop();
-	std::cout << "Simulation completed, it took :" << sw.getTotalElapsed() << "\n";
+	std::cout << "Simulation completed, it took: " << sw.getTotalElapsed() << "\n";
 
 	std::cin.ignore();
 

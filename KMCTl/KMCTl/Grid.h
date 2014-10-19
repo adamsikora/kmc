@@ -19,9 +19,9 @@ class GridCell
 {
 public:
    GridCell() : _atom(0), _vicinity(0) {}
-   inline int getAtom() { return _atom; };
+   inline int getAtom() const { return _atom; };
    inline void setAtom(int atom) { _atom = atom; };
-   inline int getVicinity() { return _vicinity; };
+   inline int getVicinity() const { return _vicinity; };
    inline void setVicinity(int nC) { _vicinity = nC; };
    inline void alterVicinity(int nC) { _vicinity += nC; };
 
@@ -40,7 +40,7 @@ public:
 
    void updateLattice(const Change& src, const Change& dest);    // updates lattice state after event
 
-	inline int present(int pos) { return _lattice[pos].getAtom();}
+	inline int present(int pos) const { return _lattice[pos].getAtom();}
    // checks whether atom is present at given position
 	
 	inline int vicinityCount(int pos) { // counts neighboring atoms
